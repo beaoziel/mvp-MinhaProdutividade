@@ -1,0 +1,10 @@
+[2023-07-09 22:17:28,926] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.95.8.98:5000 (Press CTRL+C to quit) - call_trace=c:\users\biaoz\pycharmprojects\18-paiting-project\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-09 22:18:00,795] INFO _log() L224  127.0.0.1 - - [09/Jul/2023 22:18:00] "GET /atividades HTTP/1.1" 200 - - call_trace=c:\users\biaoz\pycharmprojects\18-paiting-project\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-09 22:18:08,677] INFO _log() L224  127.0.0.1 - - [09/Jul/2023 22:18:08] "GET /atividades HTTP/1.1" 200 - - call_trace=c:\users\biaoz\pycharmprojects\18-paiting-project\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-09 22:19:42,980] INFO _log() L224  127.0.0.1 - - [09/Jul/2023 22:19:42] "POST /atividade HTTP/1.1" 200 - - call_trace=c:\users\biaoz\pycharmprojects\18-paiting-project\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-09 22:19:52,467] INFO _log() L224  127.0.0.1 - - [09/Jul/2023 22:19:52] "GET /atividades HTTP/1.1" 200 - - call_trace=c:\users\biaoz\pycharmprojects\18-paiting-project\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-09 22:20:08,826] INFO _log() L224  127.0.0.1 - - [09/Jul/2023 22:20:08] "OPTIONS /delAtividade?nome_atividade=1 HTTP/1.1" 200 - - call_trace=c:\users\biaoz\pycharmprojects\18-paiting-project\venv\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-09 22:20:08,834] INFO _log() L224  127.0.0.1 - - [09/Jul/2023 22:20:08] "DELETE /delAtividade?nome_atividade=1 HTTP/1.1" 200 - - call_trace=c:\users\biaoz\pycharmprojects\18-paiting-project\venv\lib\site-packages\werkzeug\_internal.py L224 

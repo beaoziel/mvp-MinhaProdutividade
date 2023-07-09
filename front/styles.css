@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: #FCF3E3;
+    margin-left: 5%;
+    overflow-x: hidden;
+  }
+
+
+.section-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-box {
+    font-family: Days One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1vh;
+}
+
+.title-box h1 {
+    font-size: 6vw;
+}
+
+.title-box h2 {
+    font-size: 3vw;
+}
+
+
+.input-box span {
+    color: rgb(141, 13, 62);
+}
+
+
+.input-box {
+    font-family: Abel;
+    font-weight: 100;
+    justify-content: center;
+}
+
+
+.section-input {
+    height: 5vw;
+    background-color: #D9D9D9;
+    padding: 1vb;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.section-input input {
+    outline: none;
+    border: none;
+    background-color: #D9D9D9;
+    width: 150px;
+    padding: 2vh;
+}
+
+.section-input input:hover {
+ border-bottom: 1px solid #EF8184 ;
+}
+
+.section-input input::placeholder {
+    text-align: center;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.form-btn {
+    width: 80px;
+    height: fit-content;
+    border: none;
+    background-color:  rgb(141, 13, 62);
+    padding: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: large;
+    border-radius: 10px;
+    color: white;
+}
+
+.items {
+    margin-top: 5%;
+    font-family: Abel;
+    width: 95%;
+    align-items: center;
+    overflow-y: scroll;
+    height: 340px;
+}
+
+
+table,
+th,
+td {
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-top: 1.5vh;
+    position: relative; 
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+    color: white;
+    position: relative;
+}
+
+td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.results {
+    display: flex;
+    justify-content: space-around;
+    font-family: Abel;
+    max-width: 95%;
+}
+
+.qtHours-div {
+    text-align: center;
+}
+
+.qtHours-div h1{
+    font-size: 4vw;
+    margin: 0;
+}
+
+.qtLevel-div {
+    text-align: center;
+}
+
+.qtLevel-div h1{
+    font-size: 4vw;
+    margin: 0;
+}
+
+.qtTotal-div {
+    text-align: center;
+}
+
+.qtTotal-div h1{
+    font-size: 4vw;
+    margin: 0;
+}
