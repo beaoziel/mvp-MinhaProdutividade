@@ -9,6 +9,62 @@ body {
     overflow-x: hidden;
   }
 
+  .modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+  .modal-content {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 40%;
+    color: black;
+    font-family: Abel;
+    font-size: x-large;
+    text-align: center;
+  }
+
+  #btnDelete {
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    padding: 2%;
+    font-size: medium;
+    cursor: pointer;
+    background-color: #99dfc7;
+    text-transform: uppercase;
+  }
+
+  .closeModal {
+    cursor: pointer;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeModal:hover,
+  .closeModal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
 
 .section-header {
     display: flex;
@@ -91,7 +147,7 @@ body {
     width: 95%;
     align-items: center;
     overflow-y: scroll;
-    height: 340px;
+    height: 300px;
 }
 
 
@@ -100,10 +156,11 @@ th,
 td {
     font-size: 1.8vw;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: default;
     padding-top: 1.5vh;
     position: relative; 
     text-align: center;
+    color: black;
 }
 
 table {
@@ -111,9 +168,13 @@ table {
     width: 100%;
 }
 
+table td:nth-child(1) {
+    font-weight: bold;
+}
+
 th {
-    color: white;
     position: relative;
+    color: white;
 }
 
 td {
@@ -124,11 +185,40 @@ td {
     margin-bottom: 50px;
 }
 
+.close {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(141, 13, 62);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(104, 5, 43);
+  }
+
+
 .results {
     display: flex;
     justify-content: space-around;
     font-family: Abel;
     max-width: 95%;
+    margin-top: 4%;
+    text-transform: uppercase;
 }
 
 .qtHours-div {
