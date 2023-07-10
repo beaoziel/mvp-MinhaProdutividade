@@ -38,20 +38,18 @@
                 <h1> MINHA </h1>
                 <h2>PRODUTIVIDADE</h2>
             </div>
-            <form class="input-box">
-                <h2> <span>+ </span> ADICIONAR <span class="error" style="display: none;" id="errorMessage">Por favor,
-                        cheque todos os campos!</span> </h2>
+            <section class="input-box">
+                <h2> <span>+ </span> ADICIONAR <span class="error" style="display: none;" id="errorMessage">⚠ Por favor,
+                        cheque todos os campos </span> </h2>
 
                 <div class="section-input">
-                    <input type="date" id="dateValue" placeholder="Data">
-                    <input type="text" id="activityValue" placeholder="Atividade">
-                    <input type="number" min="0" max="10" id="levelValue" placeholder="Nível">
-                    <input type="time" id="timeValue" placeholder="Tempo">
+                    <input type="date" id="dateValue" placeholder="Data" style="width: 120px;">
+                    <input type="text" id="activityValue" placeholder="Atividade" style="width: 180px;">
+                    <input type="number" min="0" max="10" id="levelValue" placeholder="Nível" style="width: 85px;">
+                    <input type="time" id="timeValue" placeholder="Tempo" style="width: 85px;">
                     <button class="form-btn" onclick="newItem()"> > </button>
                 </div>
-
-
-            </form>
+            </section>
 
         </section>
 
@@ -61,7 +59,7 @@
     <section class="items">
         <table id="tableAct">
             <tr>
-                <th>Data</th>
+                <th> Data </th>
                 <th>Atividade</th>
                 <th>Dificuldade</th>
                 <th>Tempo Gasto</th>
@@ -73,17 +71,19 @@
     <!--Metricas-->
 
     <section class="results">
-        <div class="qtHours-div">
-            <h1 id="qtHours"> 00 </h1>
-            <h3> Tempo Total</h3>
-        </div>
         <div class="qtLevel-div">
             <h1 id="qtLevel"> 00 </h1>
-            <h3> Nível médio de dificuldade</h3>
+            <span> Nível médio de dificuldade</span>
         </div>
+   
         <div class="qtTotal-div">
             <h1 id="qtTotal"> 00 </h1>
-            <h3> Atividades adicionadas</h3>
+            <span> Atividades adicionadas</span>
+        </div>
+
+        <div class="qtHours-div">
+            <h1 id="qtHours"> 00 </h1>
+            <span> Tempo Total</span>
         </div>
     </section>
 

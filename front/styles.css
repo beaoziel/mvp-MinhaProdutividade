@@ -70,6 +70,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    cursor: default;
 }
 
 .title-box {
@@ -89,13 +90,13 @@ body {
 
 
 .input-box span {
-    color: rgb(141, 13, 62);
+    color: #831261;
 }
 
 
 .input-box {
     font-family: Abel;
-    font-weight: 100;
+    font-weight: lighter;
     justify-content: center;
 }
 
@@ -116,10 +117,7 @@ body {
     background-color: #D9D9D9;
     width: 150px;
     padding: 2vh;
-}
-
-.section-input input:hover {
- border-bottom: 1px solid #EF8184 ;
+    text-align: center;
 }
 
 .section-input input::placeholder {
@@ -128,17 +126,19 @@ body {
     text-transform: uppercase;
 }
 
+
 .form-btn {
     width: 80px;
     height: fit-content;
     border: none;
-    background-color:  rgb(141, 13, 62);
+    background-color: #be3d98;
     padding: 1%;
     margin-left: 3%;
     margin-right: 3%;
     font-size: large;
     border-radius: 10px;
     color: white;
+    cursor: pointer;
 }
 
 .items {
@@ -172,9 +172,18 @@ table td:nth-child(1) {
     font-weight: bold;
 }
 
+table td:nth-child(2) {
+    text-transform: capitalize;
+}
+
+table td:nth-child(3) {
+    font-weight:lighter;
+}
+
 th {
     position: relative;
-    color: white;
+    font-weight: lighter;
+    color: #FCF3E3;
 }
 
 td {
@@ -202,13 +211,13 @@ td {
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(141, 13, 62);
+    background: #831261;
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(104, 5, 43);
+    background: #4d0a38;
   }
 
 
@@ -219,6 +228,7 @@ td {
     max-width: 95%;
     margin-top: 4%;
     text-transform: uppercase;
+    color: #FCF3E3;
 }
 
 .qtHours-div {
@@ -228,6 +238,7 @@ td {
 .qtHours-div h1{
     font-size: 4vw;
     margin: 0;
+    color: #fcf3e3bb;
 }
 
 .qtLevel-div {
@@ -246,4 +257,5 @@ td {
 .qtTotal-div h1{
     font-size: 4vw;
     margin: 0;
+    color: #fcf3e3bb;
 }
