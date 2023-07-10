@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,33 +18,46 @@
 </head>
 
 <body>
-       <header>
+    <!-- Alerta para confirmar exclusão -->
+    <section id="deleteModal" class="modal">
 
-            <section class="section-header">
+        <div class="modal-content">
+            <span class="closeModal" onclick="closeModal()">&times;</span>
+            <p> Tem certeza que quer excluir a atividade ? </p>
+            <button id="btnDelete"> Sim </button>
+        </div>
 
-                <div class="title-box">
-                    <h1> MINHA </h1>
-                    <h2>PRODUTIVIDADE</h2>
+    </section>
+
+    <!-- Cabeçalho + formulário para inserir dados-->
+    <header>
+
+        <section class="section-header">
+
+            <div class="title-box">
+                <h1> MINHA </h1>
+                <h2>PRODUTIVIDADE</h2>
+            </div>
+            <form class="input-box">
+                <h2> <span>+ </span> ADICIONAR <span class="error" style="display: none;" id="errorMessage">Por favor,
+                        cheque todos os campos!</span> </h2>
+
+                <div class="section-input">
+                    <input type="date" id="dateValue" placeholder="Data">
+                    <input type="text" id="activityValue" placeholder="Atividade">
+                    <input type="number" min="0" max="10" id="levelValue" placeholder="Nível">
+                    <input type="time" id="timeValue" placeholder="Tempo">
+                    <button class="form-btn" onclick="newItem()"> > </button>
                 </div>
-                <div class="input-box">
-                    <h2> <span>+ </span> ADICIONAR <span class="error" style="display: none;" id="errorMessage">Por favor, adicione todos os campos!</span> </h2>
-    
-                    <section class="section-input">
-                        <input type="date" id="dateValue" placeholder="Data">
-                        <input type="text" id="activityValue" placeholder="Atividade">
-                        <input type="number" min="0" max="10" id="levelValue" placeholder="Nível"> 
-                        <input type="time" id="timeValue" placeholder="Tempo">
-                        <button class="form-btn" onclick="newItem()"> > </button>
-                    </section>
-                    
-    
-                </div>
-                
-            </section>
 
-       </header>
 
-       <!-- Tabela com items existentes -->
+            </form>
+
+        </section>
+
+    </header>
+
+    <!-- Tabela com items existentes -->
     <section class="items">
         <table id="tableAct">
             <tr>
@@ -51,7 +65,7 @@
                 <th>Atividade</th>
                 <th>Dificuldade</th>
                 <th>Tempo Gasto</th>
-                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="30px" height="30px"></th>
+                <th><img src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/trash--v1.png" width="30px" height="30px"></th>
             </tr>
         </table>
     </section>
