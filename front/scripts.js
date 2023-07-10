@@ -77,6 +77,14 @@ const formatLevelValue = (input_level_list) => {
     } 
    
     document.getElementById("qtLevel").innerHTML = total.toFixed(1)
+
+    if(total < 5 ) {
+        document.getElementById("qtLevel").style.color = "#A8C896"
+    } else if (total > 6) {
+        document.getElementById("qtLevel").style.color = "#800046bb"
+    } else {
+        document.getElementById("qtLevel").style.color = "#ffc767bb"
+    }
 }
 
 
@@ -132,6 +140,15 @@ const insertList = (date_act, name_act, level, time_act) => {
     for (var i = 0; i < item.length; i++) {
         var cel = row.insertCell(i);
         cel.textContent = item[i];
+        if (i == 2) {
+            if (parseInt(item[i]) < 5) {
+                cel.style.color = '#A8C896'
+            } else if (parseInt(item[i]) > 6) {
+                cel.style.color = 'mediumvioletred'
+            } else {
+                cel.style.color = '#FFCA63'
+            }
+        }
     }
     insertButton(row.insertCell(-1))
     document.getElementById("dateValue").value = ""
@@ -196,13 +213,12 @@ const newItem = () => {
     let input_activity = document.getElementById("activityValue").value;
     let input_level = document.getElementById("levelValue").value;
     let input_time = document.getElementById("timeValue").value;
-    errors = []
-
+ 
     if (input_date === '' || input_activity === '' || input_level === '' || input_time === '') {
         document.getElementById("errorMessage").style.display = "block"
-    } if (input_level > 10 || input_level < 0) {
+    } else if (input_level > 10 || input_level < 0) {
         document.getElementById("errorMessage").style.display = "block"
-        // document.getElementById("errorMessage").innerHTML = "Valor da dificuldade entre 0 e 10!"
+        document.getElementById("errorMessage").innerHTML = "⚠ Valor da dificuldade deve ser entre 0 e 10"
     } else {
         input_date = input_date.concat(" ", "00:00:00")
         insertList(input_date, input_activity, input_level, input_time)
