@@ -20,7 +20,7 @@
 
 ## 📁 Acesso ao projeto
 <p>
-  Para acessar, baixe o [código fonte](https://github.com/beaoziel/mvp-minhaProdutividade/archive/refs/heads/main.zip) do projeto e cheque os README de cada pasta
+  Para acessar, baixe o <a href="https://github.com/beaoziel/mvp-minhaProdutividade/archive/refs/heads/main.zip">código fonte</a> do projeto e cheque os README de cada pasta
 </p>
 
 ## 🖥️ Tecnologias Utilizadas
