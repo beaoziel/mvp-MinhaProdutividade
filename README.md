@@ -11,7 +11,7 @@
 ## 📃 Descrição do projeto
 <p>
   <i>Minha produtividade </i> é uma API construída com o objetivo de monitorar e controlar as atividades realizadas, visualizando o resultado com métricas como o tempo total trabalhado e a média de dificuldade.
-  Fieto de estudante para estudante, o programa consegue registrar as atividades de forma dinâmica, para ser usado até mesmo como um organizador de atividades.
+  Feito de estudante para estudante, o programa consegue registrar as atividades de forma dinâmica, para ser usado até mesmo como um organizador de atividades.
 </p>
 
 ## ✨ Funcionalidades
