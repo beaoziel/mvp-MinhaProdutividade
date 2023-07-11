@@ -1,7 +1,7 @@
 
 ![mvp-minha produtividade](https://github.com/beaoziel/mvp-MinhaProdutividade/assets/61751794/5a4afb68-6e42-4eaa-9840-6d711a25e371)
 
-![GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social) ![Badge](https://img.shields.io/badge/Pós%20Graduação-purple) ![Badge Status](https://img.shields.io/badge/STATUS-Finalizado-blue)
+![GitHub Org's stars](https://img.shields.io/github/stars/beaoziel?style=social) ![Badge](https://img.shields.io/badge/Pós%20Graduação-purple) ![Badge Status](https://img.shields.io/badge/STATUS-Finalizado-blue)
 # Índice 
 * [Índice](#índice)
 * [Descrição do Projeto](#descrição-do-projeto)
