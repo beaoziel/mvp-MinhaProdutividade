@@ -1,6 +1,6 @@
 ## 👉 Como Executar
 <p>
-  Após baixar/clonar o repositório, vá até a pasta raiz e abra o terminal.
+  Após baixar/clonar o repositório, vá até a pasta raiz (<i>$ cd api</i>) e abra o terminal.
   Copie e cole o comando a seguir:
   
 - `$ pip install -r requirements.txt` : Este comando instala as dependências/bibliotecas, descritas no arquivo requirements.txt.
@@ -12,4 +12,6 @@
   
   Deve abrir essa página e pronto - você já pode checar a sua produtividade! ☺️
   
-  ![image](https://github.com/beaoziel/mvp-minhaProdutividade/assets/61751794/3981ae55-9d28-4ebd-9a88-758f1a3fa0a3)
+  ![image](https://github.com/beaoziel/mvp-MinhaProdutividade/assets/61751794/b105b553-4eb5-45ff-a291-79bcb721b325)
+
+Atenção: O projeto é conectado à uma Base de dados, ou seja, é possível ter acesso ao seu próprio histórico.
