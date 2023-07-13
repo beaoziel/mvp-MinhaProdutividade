@@ -81,7 +81,7 @@ const formatLevelValue = (input_level_list) => {
     if(total < 5 ) {
         document.getElementById("qtLevel").style.color = "#A8C896"
     } else if (total > 6) {
-        document.getElementById("qtLevel").style.color = "#800046bb"
+        document.getElementById("qtLevel").style.color = "#fcf3e3bb"
     } else {
         document.getElementById("qtLevel").style.color = "#ffc767bb"
     }

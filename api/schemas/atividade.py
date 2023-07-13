@@ -4,7 +4,7 @@ from typing import List
 from model.atividade import Atividade
 
 class AtividadeSchema(BaseModel):
-    """ Define como um novo produto a ser inserido deve ser representado
+    """ Define como uma nova atividade a ser inserida deve ser representado
     """
     data: datetime = "2023-07-12"
     nome_atividade: str = "Estudo Programação"
@@ -13,17 +13,17 @@ class AtividadeSchema(BaseModel):
 
 class AtividadeBuscaSchema(BaseModel):
     """ Define como deve ser a estrutura que representa a busca. Que será
-        feita apenas com base no nome do produto.
+        feita apenas com base no nome da atividade.
     """
     nome_atividade: str = "Estudo Programação"
 
 class ListagemAtividadesSchema(BaseModel):
-    """ Define como uma listagem de produtos será retornada.
+    """ Define como uma listagem de atividades será retornada.
     """
     atividades:List[AtividadeSchema]
 
 def apresenta_atividades(atividades: List[Atividade]):
-    """ Retorna uma representação do produto seguindo o schema definido em
+    """ Retorna uma representação da atividade seguindo o schema definido em
        AtividadeViewSchema.
     """
     result = []
@@ -45,7 +45,7 @@ class AtividadeDelSchema(BaseModel):
     nome_atividade: str
 
 class AtividadeViewSchema(BaseModel):
-    """ Define como um produto será retornado: atividade.
+    """ Define como um produto será retornado: Atividade.
     """
     id: int = 1
     data: datetime = "2023-07-12"

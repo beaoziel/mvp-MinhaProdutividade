@@ -84,7 +84,7 @@ def get_atividades():
 @app.delete('/delAtividade', tags=[atividade_tag],
             responses={"200": AtividadeDelSchema, "404": ErrorSchema})
 def del_atividade(query: AtividadeBuscaSchema):
-    """Deleta uma Atividade a partir do nome de produto informado
+    """Deleta uma Atividade a partir do nome da atividade informado
     Retorna uma mensagem de confirmação da remoção.
     """
     atividade_nome = unquote(unquote(query.nome_atividade))

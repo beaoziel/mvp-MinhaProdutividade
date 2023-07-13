@@ -89,10 +89,13 @@ body {
 }
 
 
-.input-box span {
+.detail-title {
     color: #831261;
 }
 
+.error {
+    color: #ad773a;
+}
 
 .input-box {
     font-family: Abel;
